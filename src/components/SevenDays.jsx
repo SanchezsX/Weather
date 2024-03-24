@@ -13,12 +13,12 @@ const SevenDays = ({ image, temp, date }) => {
       <div className="w-[60px] h-[60px] relative">
         <img
           className="w-full h-full object-contain"
-          src={image}
+          src={`.${image}`}
           alt=""
         />
         <img
           className="w-full h-full object-contain absolute top-0 bottom-0 blur-[30px]"
-          src={image}
+          src={`.${image}`}
           alt=""
         />
       </div>

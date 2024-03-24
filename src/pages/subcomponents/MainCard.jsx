@@ -36,7 +36,7 @@ const MainCard = ({ data }) => {
           <div className="w-[120px] h-[120px]">
             <img
               className="w-full h-full object-contain"
-              src={getWeatherIcon(values.weatherCode)}
+              src={`.${getWeatherIcon(values.weatherCode)}`}
               alt="item"
             />
           </div>

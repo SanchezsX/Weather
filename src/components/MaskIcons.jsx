@@ -5,7 +5,7 @@ const MaskIcons = ({ path, width, height, color = '#FFF', className }) => {
     <div
       className={cn(className, 'icon')}
       style={{
-        maskImage: `url(${path})`,
+        maskImage: `url(.${path})`,
         width,
         height,
         backgroundColor: color,
