@@ -33,7 +33,7 @@ const Content = ({
               <div className="flex flex-col h-full justify-center gap-5 text-center w-[60%] mx-auto">
                 <img
                   className="w-[50px] h-[50px] mx-auto mb-8"
-                  src="/icons/false-icons.svg"
+                  src="./icons/false-icons.svg"
                   alt=""
                 />
                 <h1 className="text-3xl font-bold">Couldn't find the city</h1>
