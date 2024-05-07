@@ -1,8 +1,5 @@
-# React + Vite
+# (React, Vite, Tailwind, API)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![image](https://github.com/SanchezsX/Weather/assets/113286578/dc5eba4b-7ea6-4f59-aaec-36c5859950cf)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/SanchezsX/Weather/assets/113286578/afacc51c-c6c9-460f-a15c-6d54e94d8d23)
