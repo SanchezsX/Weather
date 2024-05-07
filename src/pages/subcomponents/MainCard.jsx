@@ -26,6 +26,7 @@ const MainCard = ({ data }) => {
     <div
       className={cn(
         'relative rounded-[18px] row-span-2 p-8 border-soli',
+        'max-md:p-4 max-md:h-[90%]',
         isDay
           ? 'bg-gradient-to-b from-blue-600  to-blue-400'
           : 'bg-gradient-to-b from-blue-800 to-blue-950 after:content-[""] after:absolute after:top-0 after:left-0 after:w-full after:h-1/2 '
@@ -33,14 +34,18 @@ const MainCard = ({ data }) => {
     >
       <div className="flex flex-col justify-between h-full gap-4">
         <div className="flex flex-col items-center gap-6">
-          <div className="w-[120px] h-[120px]">
+          <div className={cn("w-[120px] h-[120px]",
+            'max-md:w-[100px] max-md:h-[100px]'
+          )}>
             <img
               className="w-full h-full object-contain"
               src={`.${getWeatherIcon(values.weatherCode)}`}
               alt="item"
             />
           </div>
-          <h3 className="text-[60px] font-semibold leading-3 my-2 ">
+          <h3 className={cn("text-[60px] font-semibold leading-3 my-2",
+            'max-md:text-[45px]'
+          )}>
             {formatted}°
           </h3>
         </div>
