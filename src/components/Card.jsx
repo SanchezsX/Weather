@@ -15,13 +15,18 @@ const Card = ({ title, image, percent }) => {
       <div className="flex justify-between items-center gap-3 max-md:flex-col max-md:text-center">
         <h4 className="text-[18px] tracking-wider font-semibold">{title}</h4>
         <MaskIcons
-        className="flex-shrink-0 flex max-md:hidden"
+          className="flex-shrink-0 flex max-md:hidden"
           width="22px"
           height="22px"
           path={image}
         />
       </div>
-      <div className="flex justify-between items-center gap-3 mt-auto max-md:justify-center ">
+      <div
+        className={cn(
+          'flex justify-between items-center gap-3 mt-auto  ',
+          'max-md:justify-center'
+        )}
+      >
         <h6 className="text-[20px] font-semibold">{percent}</h6>
       </div>
     </div>

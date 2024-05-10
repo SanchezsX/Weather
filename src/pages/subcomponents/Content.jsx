@@ -30,14 +30,24 @@ const Content = ({
           ></button>
           {!data.data || hourlyError ? (
             <div className="w-[80%] h-[80%] bg-[#151515] rounded-[18px] mx-auto">
-              <div className="flex flex-col h-full justify-center gap-5 text-center w-[60%] mx-auto">
+              <div
+                className={cn(
+                  'flex flex-col h-full justify-center gap-5 text-center w-[60%] mx-auto',
+                  'max-[512px]:w-[80%]'
+                )}
+              >
                 <img
-                  className="w-[50px] h-[50px] mx-auto mb-8"
+                  className={cn(
+                    'w-[50px] h-[50px] mx-auto mb-8',
+                    'max-[512px]:size-[40px] max-[512px]:mb-2'
+                  )}
                   src="./icons/false-icons.svg"
                   alt=""
                 />
-                <h1 className="text-3xl font-bold">Couldn't find the city</h1>
-                <h4 className="opacity-50">
+                <h1 className="text-3xl font-bold max-[512px]:text-2xl">
+                  Couldn't find the city
+                </h1>
+                <h4 className="opacity-50 max-[512px]:text-[14px]">
                   Try again, or you entered the name of the city incorrectly. If
                   you are doing everything right, contact support.
                 </h4>
