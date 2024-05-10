@@ -9,14 +9,14 @@ const SevenDays = ({ image, temp, date }) => {
         'max-md:h-[80%]'
       )}
     >
-      <p className={cn('text-[18px] opacity-60', 'max-md:text-[14px]')}>
+      <p className={cn('text-[18px] opacity-60', 'max-md:text-[14px] max-[580px]:text-[12px]')}>
         {date}
       </p>
       <div className="bg-white/10 w-[50%] h-[1px]"></div>
       <div
         className={cn(
           'w-[60px] h-[60px] relative',
-          'max-md:w-[45px] max-md:h-[45px]'
+          'max-md:w-[45px] max-md:h-[45px] max-[580px]:size-[40px]'
         )}
       >
         <img
@@ -34,7 +34,7 @@ const SevenDays = ({ image, temp, date }) => {
         className={cn(
           'relative flex items-start text-[35px] font-semibold',
           "after:content-['°C'] after:tracking-wider after:text-xs after:opacity-60 after:font-normal",
-          'max-md:text-[25px]'
+          'max-md:text-[25px] max-[580px]:text-[20px]'
         )}
       >
         {temp}

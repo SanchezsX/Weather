@@ -34,24 +34,30 @@ const MainCard = ({ data }) => {
     >
       <div className="flex flex-col justify-between h-full gap-4">
         <div className="flex flex-col items-center gap-6">
-          <div className={cn("w-[120px] h-[120px]",
-            'max-md:w-[100px] max-md:h-[100px]'
-          )}>
+          <div
+            className={cn(
+              'w-[120px] h-[120px]',
+              'max-md:w-[100px] max-md:h-[100px]'
+            )}
+          >
             <img
               className="w-full h-full object-contain"
               src={`.${getWeatherIcon(values.weatherCode)}`}
               alt="item"
             />
           </div>
-          <h3 className={cn("text-[60px] font-semibold leading-3 my-2",
-            'max-md:text-[45px]'
-          )}>
+          <h3
+            className={cn(
+              'text-[60px] font-semibold leading-3 my-2',
+              'max-md:text-[45px]'
+            )}
+          >
             {formatted}°
           </h3>
         </div>
-        <div className="flex flex-col gap-8">
-          <div className="mx-auto bg-white/10 h-[1px] w-[80%] my-2"></div>
-          <p className="flex gap-2 text-[16px] items-center">
+        <div className="flex flex-col gap-8 max-[580px]:mb-auto">
+          <div className="mx-auto bg-white/10 h-[1px] w-[80%] my-2 "></div>
+          <p className="flex gap-2 text-[16px] items-center ">
             <MaskIcons
               width="24px"
               height="24px"
@@ -59,7 +65,7 @@ const MainCard = ({ data }) => {
             />
             {shortName}
           </p>
-          <p className="flex gap-2 text-[16px] items-center">
+          <p className="flex gap-2 text-[16px] items-center max-[580px]:hidden">
             <MaskIcons
               width="24px"
               height="24px"

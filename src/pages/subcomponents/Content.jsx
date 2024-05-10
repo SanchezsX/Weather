@@ -20,7 +20,7 @@ const Content = ({
       {!isLoading && isOpen && (
         <div
           className={cn(
-            'w-full  h-[50vh] rounded-[16px] transition delay-200',
+            'w-full  h-[50vh] max-[580px]:h-[45vh] rounded-[16px] transition delay-200',
             isOpen ? 'opacity-100' : 'opacity-0'
           )}
         >
@@ -44,7 +44,7 @@ const Content = ({
               </div>
             </div>
           ) : (
-            <div className="grid grid-cols-4 grid-rows-[200px,1fr] h-full gap-5">
+            <div className="grid grid-cols-4 grid-rows-[200px,1fr] h-full gap-5 max-md:gap-3">
               <MainCard data={data} />
               <Card
                 title="Visibility"
